@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "npm run build:html && npm run build:css && npm run build:js",
+    "build:html": "cp src/*.html build/",
+    "build:css": "cp src/*.css build/", 
+    "build:js": "cp src/*.js build/"
   },
   "keywords": [],
   "author": "",
